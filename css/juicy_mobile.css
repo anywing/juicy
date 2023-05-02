@@ -1,0 +1,48 @@
+@media screen and (max-width:1024px) {
+    /* 모바일 헤더 레이아웃 */
+    header .top_menu{display: none;}
+    header nav .gnb_wrap .gnb{display: none;}
+
+    header nav .gnb_wrap{padding:15px 20px; position: relative;}
+
+    header nav .gnb_wrap .logo{width:90px; }
+    header nav .gnb_wrap .logo img{width:100%; }
+    
+    header nav .gnb_wrap .menu_icon{width: 40px; display:block; display: flex; flex-direction: column; justify-content: space-around;}
+    header nav .gnb_wrap .menu_icon span{display:block; width: 100%; height: 10%; background: #ff001e;}
+
+    header nav .gnb_wrap .gnb_m{display: block; position: absolute; top: 100%; left:0; width: 100%; height: 0; transition: height 0.4s ease-in; overflow: hidden;}
+    header nav .gnb_wrap .gnb_m ul li{width: 100%; height: 50px; line-height: 50px; transition: height 0.4s ease-in;}
+    header nav .gnb_wrap .gnb_m > ul > li{background: #ff001e;  overflow: hidden;}
+    header nav .gnb_wrap .gnb_m > ul > li > a{color:white; display: block; width: 100%; height: 50px; border-top: 1px solid white;}
+    header nav .gnb_wrap .gnb_m ul li:first-child a{border:none;}
+    header nav .gnb_wrap .gnb_m ul li .snb{width: 100%; background: white; color:#ff001e;}
+    header nav .gnb_wrap .gnb_m ul li .snb a{display:block; width: 100%; color:#ff001e;}
+    header nav .gnb_wrap .gnb_m ul li .snb a:hover{text-decoration: underline;}
+
+    /* 섹션 미디어쿼리 */
+    main{height:calc(100vw * (1400 / 1920)); background-size: cover;}
+    main .main_text{padding-top:5vw;}
+    main .main_text p{line-height:20px;font-size:18px; font-weight:400;}
+    main .main_text p:first-child{margin-bottom:7px;}
+    main .main_text h2{font-size:70px; margin-top: 3vw;}
+
+    .section1{margin-top:90px;}
+    .section1 .menu{flex-wrap: wrap; justify-content:center; gap:5%; margin-bottom:60px;}
+    .section1 .menu li{width: 30%;}
+    .section1 .menu li:first-child{margin-bottom: 10%;}
+    .section1 .menu li:last-child{display: none;}
+
+    .banner{margin:90px 0;}
+
+    .section2{padding-bottom: 90px;}
+
+    .section2 .tabs ul li{width:calc(100% / 3); height: 55px; line-height:40px;}
+    .section2 .tabs ul li a{font-size:20px;}
+}
+
+@media screen and (max-width:741px){
+    main .main_text h2{font-size:40px; margin-top: 3vw;}
+
+    .section2 .tabs ul li a{font-size:16px;}
+}
